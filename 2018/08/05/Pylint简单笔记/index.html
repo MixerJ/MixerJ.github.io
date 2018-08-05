@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | OnePunch</title>
+  <title>Pylint简单笔记 | OnePunch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="OnePunch">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="pylint（Python语言规范（google））异常:    　尽量减少try/except快中的代码量。try块的体积越大，期望之外的异常就越容易被触发。    　永远不要使用except语句来捕获所有异常，也不要捕获Exception或者StanderError。会很容易隐藏真正的bug。    　当捕获异常时，使用as而不要使用逗号。">
+<meta name="keywords" content="Python,Pylint,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pylint简单笔记">
+<meta property="og:url" content="http://yoursite.com/2018/08/05/Pylint简单笔记/index.html">
 <meta property="og:site_name" content="OnePunch">
+<meta property="og:description" content="pylint（Python语言规范（google））异常:    　尽量减少try/except快中的代码量。try块的体积越大，期望之外的异常就越容易被触发。    　永远不要使用except语句来捕获所有异常，也不要捕获Exception或者StanderError。会很容易隐藏真正的bug。    　当捕获异常时，使用as而不要使用逗号。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-05T14:19:56.268Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OnePunch">
+<meta name="twitter:title" content="Pylint简单笔记">
+<meta name="twitter:description" content="pylint（Python语言规范（google））异常:    　尽量减少try/except快中的代码量。try块的体积越大，期望之外的异常就越容易被触发。    　永远不要使用except语句来捕获所有异常，也不要捕获Exception或者StanderError。会很容易隐藏真正的bug。    　当捕获异常时，使用as而不要使用逗号。">
   
     <link rel="alternative" href="/atom.xml" title="OnePunch" type="application/atom+xml">
   
@@ -146,36 +151,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Pylint简单笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/Pylint简单笔记/" class="archive-article-date">
-  	<time datetime="2018-08-05T13:49:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/Pylint简单笔记/">Pylint简单笔记</a>
+    <h1 class="article-title" itemprop="name">
+      Pylint简单笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/08/05/Pylint简单笔记/" class="archive-article-date">
+  	<time datetime="2018-08-05T13:49:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="pylint（Python语言规范（google））"><a href="#pylint（Python语言规范（google））" class="headerlink" title="pylint（Python语言规范（google））"></a>pylint（Python语言规范（google））</h2><p>异常:<br>    　尽量减少try/except快中的代码量。try块的体积越大，期望之外的异常就越容易被触发。<br>    　永远不要使用except语句来捕获所有异常，也不要捕获Exception或者StanderError。会很容易隐藏真正的bug。<br>    　当捕获异常时，使用as而不要使用逗号。<br><a id="more"></a><br>全局变量：<br>　　避免全局变量，偶有有用。<br>　　例外：<br>　　　　１、脚本的默认选项。<br>　　　　２、模块极常量：例：PI＝３.14159，常量应该全大写，用下划线链接。<br>　　　　３、有时候用全局变量来缓存值或者作为函数返回值很有用。<br>　　　　４、如果需要，全局变量应该仅在模块内部可用，并通过模块级的公共函数访问。</p>
+<p>默认参数值：<br>　　不要在函数或方法中使用可变对象作为默认值。</p>
+<p>True/False：<br>　　尽可能使用隐式False<br>　　永远不要用==或者!=来比较单件，比如None，使用is或者is not。<br>　　处理整数时，使用隐式False可能会得不偿失，你可以将一个已知是整型但不是len()的返回结果与０比较。</p>
+<p>语法作用域：<br>　　嵌套的Python函数可以引用外层函数中定义的变量，但是不能够对它们赋值。</p>
+<p>行长度：<br>　　每行不超过８０个字符（圆括号，中括号，花括号中的行隐式的链接起来）。<br>　　如果一个文本字符串在一行放不下，可使用圆括号来实现隐式行链接。<br>　　如：x = (‘This will build a very long long’<br>　　　　　　‘long long long long long long long string’)<br>　　在注释中，如有必要，将长的URL放在一行上。</p>
+<p>括号：<br>　　除非是用于实现行链接，否则不要在返回语句或条件语句中使用括号，不过在元祖两边使用括号是可以的。
+　　</p>
+<p>大部分py文件不必以#!作为文件的开始，根程序的main文件应该以#!/usr/bin/python2或者#!/usr/bin/python3开始。</p>
+<p>为了提高可读性，注释应该至少离开代码两个空格。<br>如：<br>　　if i &amp; (i - 1) == 0:          # true if i is a power of 2.</p>
+<p>可将字符串加入列表中，使用.join()将字符串连接起来。</p>
+<p>文件与sockets：<br>　　在文件和sockets结束时。显式的关闭它。<br>　　推荐使用with语句来管理文件。<br>　　对于不支持使用“with”语句的类似文件的对象，使用contextlib.closing()。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,7 +209,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -208,44 +222,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/05/Pylint简单笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/29/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-29T09:56:30.276Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-29</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/29/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -268,8 +342,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
