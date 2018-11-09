@@ -105,43 +105,53 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
                 
-                            <img src="/images/logo.svg" alt="" height="28">
-                            
+                <img src="/images/logo.svg" alt="" height="28">
+                
             </a>
         </div>
         <div class="navbar-menu">
             
-                <div class="navbar-start">
-                    
-                        <a class="navbar-item" href="/">主页</a>
-                        
-                        <a class="navbar-item" href="/archives">归档</a>
-                        
-                        <a class="navbar-item" href="/categories">分类</a>
-                        
-                        <a class="navbar-item" href="/tags">标签</a>
-                        
-                        <a class="navbar-item" href="/about">关于</a>
-                        
-                </div>
+            <div class="navbar-start">
                 
-                    <div class="navbar-end">
-                        
-                            
-                                
-                                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
-                                        
-                                                    <i class="fab fa-github"></i>
-                                                    
-                                    </a>
-                                    
-                                        
-                                            
-                                                <a class="navbar-item search" title="搜索" href="javascript:;">
-                                                    <i class="fas fa-search"></i>
-                                                </a>
-                                                
-                    </div>
+                <a class="navbar-item"
+                    href="/">
+                    主页</a>
+                
+                <a class="navbar-item"
+                    href="/archives">
+                    归档</a>
+                
+                <a class="navbar-item"
+                    href="/categories">
+                    分类</a>
+                
+                <a class="navbar-item"
+                    href="/tags">
+                    标签</a>
+                
+                <a class="navbar-item"
+                    href="/about">
+                    关于我</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                
+                <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                    
+                    <i class="fab fa-github"></i>
+                    
+                </a>
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
         </div>
     </div>
 </nav>
@@ -151,33 +161,33 @@
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
-            <div class="card-content article ">
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-08-05T13:49:09.000Z">2018-08-05</time>
                 
-                    <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-                        <div class="level-left">
-                            <time class="level-item has-text-grey" datetime="2018-08-05T13:49:09.000Z">2018-08-05</time>
-                            
-                                <div class="level-item">
-                                    <a class="has-link-grey -link" href="/categories/Python学习/">Python学习</a>
-                                </div>
-                                
-                                    
-                                        <span class="level-item has-text-grey">
-                                            
-                                                
-                                                    5 分钟 读完 (大约 745 个字)
-                                        </span>
-                                        
-                        </div>
-                    </div>
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Python学习/">Python学习</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
                     
-                        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-                            
-                                    Pylint简单笔记
-                                        
-                        </h1>
-                        <div class="content">
-                            <h2 id="pylint（Python语言规范（google））"><a href="#pylint（Python语言规范（google））" class="headerlink" title="pylint（Python语言规范（google））"></a>pylint（Python语言规范（google））</h2><p>异常:<br>    　尽量减少try/except快中的代码量。try块的体积越大，期望之外的异常就越容易被触发。<br>    　永远不要使用except语句来捕获所有异常，也不要捕获Exception或者StanderError。会很容易隐藏真正的bug。<br>    　当捕获异常时，使用as而不要使用逗号。<br><a id="more"></a><br>全局变量：<br>　　避免全局变量，偶有有用。<br>　　例外：<br>　　　　１、脚本的默认选项。<br>　　　　２、模块极常量：例：PI＝３.14159，常量应该全大写，用下划线链接。<br>　　　　３、有时候用全局变量来缓存值或者作为函数返回值很有用。<br>　　　　４、如果需要，全局变量应该仅在模块内部可用，并通过模块级的公共函数访问。</p>
+                    
+                    5 分钟 读完 (大约 745 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Pylint简单笔记
+            
+        </h1>
+        <div class="content">
+            <h2 id="pylint（Python语言规范（google））"><a href="#pylint（Python语言规范（google））" class="headerlink" title="pylint（Python语言规范（google））"></a>pylint（Python语言规范（google））</h2><p>异常:<br>    　尽量减少try/except快中的代码量。try块的体积越大，期望之外的异常就越容易被触发。<br>    　永远不要使用except语句来捕获所有异常，也不要捕获Exception或者StanderError。会很容易隐藏真正的bug。<br>    　当捕获异常时，使用as而不要使用逗号。<br><a id="more"></a><br>全局变量：<br>　　避免全局变量，偶有有用。<br>　　例外：<br>　　　　１、脚本的默认选项。<br>　　　　２、模块极常量：例：PI＝３.14159，常量应该全大写，用下划线链接。<br>　　　　３、有时候用全局变量来缓存值或者作为函数返回值很有用。<br>　　　　４、如果需要，全局变量应该仅在模块内部可用，并通过模块级的公共函数访问。</p>
 <p>默认参数值：<br>　　不要在函数或方法中使用可变对象作为默认值。</p>
 <p>True/False：<br>　　尽可能使用隐式False<br>　　永远不要用==或者!=来比较单件，比如None，使用is或者is not。<br>　　处理整数时，使用隐式False可能会得不偿失，你可以将一个已知是整型但不是len()的返回结果与０比较。</p>
 <p>语法作用域：<br>　　嵌套的Python函数可以引用外层函数中定义的变量，但是不能够对它们赋值。</p>
@@ -189,39 +199,39 @@
 <p>可将字符串加入列表中，使用.join()将字符串连接起来。</p>
 <p>文件与sockets：<br>　　在文件和sockets结束时。显式的关闭它。<br>　　推荐使用with语句来管理文件。<br>　　对于不支持使用“with”语句的类似文件的对象，使用contextlib.closing()。</p>
 
-                        </div>
-                        
-                            <div class="level is-size-7 is-uppercase">
-                                <div class="level-start">
-                                    <div class="level-item">
-                                        <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                                        <a class="has-link-grey -link" href="/tags/Pylint/">Pylint</a>, <a class="has-link-grey -link" href="/tags/Python/">Python</a>, <a class="has-link-grey -link" href="/tags/笔记/">笔记</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                                
-                                        
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Pylint/">Pylint</a>, <a class="has-link-grey -link" href="/tags/Python/">Python</a>, <a class="has-link-grey -link" href="/tags/笔记/">笔记</a>
+                </div>
             </div>
+        </div>
+        
+        
+        
+    </div>
 </div>
 
 
-    <div class="card card-transparent">
-        <div class="level post-navigation is-flex-wrap is-mobile">
-            
-                <div class="level-start">
-                    <a class="level level-item has-link-grey  article-nav-prev" href="/2018/11/10/面试易错/">
-                        <i class="level-item fas fa-chevron-left"></i>
-                        <span class="level-item">Python面试易错点</span>
-                    </a>
-                </div>
-                
-                    
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/11/10/面试易错/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Python面试易错点</span>
+            </a>
         </div>
+        
+        
     </div>
-    
+</div>
 
-        </div>
+
+</div>
                 
 
 
@@ -234,7 +244,7 @@
         <nav class="level">
             <div class="level-item has-text-centered">
                 <div>
-                    <img class="image is-128x128 has-mb-6" src="/images/head.jpg">
+                    <img class="image is-128x128 has-mb-6" src="/images/head.png">
                     
                     <p class="is-size-4 is-block">
                         Edit
@@ -443,7 +453,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            文档
+            归档
         </h3>
         <ul class="menu-list">
         
@@ -583,7 +593,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            文档
+            归档
         </h3>
         <ul class="menu-list">
         
