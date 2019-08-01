@@ -2,18 +2,23 @@
 <html  lang="zh">
 <head>
     <meta charset="utf-8">
-<title>标签: AWS - OnePunch</title>
+<title>Python面试易错点 - OnePunch</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="OnePunch">
-<meta property="og:url" content="http://yoursite.com/tags/AWS/index.html">
+    <meta name="description" content="以下代码是面试过程中出错的：  1234567891011def func_2(it):    it[&amp;apos;city&amp;apos;] = &amp;apos;chengdu&amp;apos;def func_1():    a = &amp;#123;&amp;#125;    a[&amp;apos;name&amp;apos;] = &amp;apos;John&amp;apos;    func_2(a)    print afunc_1()">
+<meta name="keywords" content="笔记,Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python面试易错点">
+<meta property="og:url" content="http://yoursite.com/2019/08/01/面试易错/index.html">
 <meta property="og:site_name" content="OnePunch">
+<meta property="og:description" content="以下代码是面试过程中出错的：  1234567891011def func_2(it):    it[&amp;apos;city&amp;apos;] = &amp;apos;chengdu&amp;apos;def func_1():    a = &amp;#123;&amp;#125;    a[&amp;apos;name&amp;apos;] = &amp;apos;John&amp;apos;    func_2(a)    print afunc_1()">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-09T17:25:04.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OnePunch">
+<meta name="twitter:title" content="Python面试易错点">
+<meta name="twitter:description" content="以下代码是面试过程中出错的：  1234567891011def func_2(it):    it[&amp;apos;city&amp;apos;] = &amp;apos;chengdu&amp;apos;def func_1():    a = &amp;#123;&amp;#125;    a[&amp;apos;name&amp;apos;] = &amp;apos;John&amp;apos;    func_2(a)    print afunc_1()">
 
 
 
@@ -155,33 +160,22 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">AWS</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-01T05:42:17.279Z">2019-08-01</time>
+                <time class="level-item has-text-grey" datetime="2019-08-01T05:42:17.285Z">2019-08-01</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/AWS/">AWS</a>
+                <a class="has-link-grey -link" href="/categories/Python学习/">Python学习</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 197 个字)
+                    1 分钟 读完 (大约 141 个字)
                 </span>
                 
             </div>
@@ -189,30 +183,51 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/08/01/AWS Fargate部署/">AWS ECS fargate模式(基于docker hub)部署</a>
+                Python面试易错点
             
         </h1>
         <div class="content">
-            <h3 id="Fargate简介"><a href="#Fargate简介" class="headerlink" title="Fargate简介"></a>Fargate简介</h3><blockquote>
-<p>AWS Fargate 是一种适用于 Amazon ECS 的计算引擎，让您无需管理服务器或群集即可运行容器。使用 AWS Fargate，您不必再预置、配置和扩展虚拟机群集即可运行容器。这样一来，您就无需再选择服务器类型、确定扩展群集的时间和优化群集打包。AWS Fargate 让您省去了考虑服务器和群集以及与之交互的麻烦。使用 Fargate，您可以专注于设计和构建应用程序，而不是管理运行应用程序的基础设施。(<a href="https://aws.amazon.com/cn/fargate/" target="_blank" rel="noopener">截取AWS官网</a>)</p>
+            <blockquote>
+<h6 id="以下代码是面试过程中出错的："><a href="#以下代码是面试过程中出错的：" class="headerlink" title="以下代码是面试过程中出错的："></a>以下代码是面试过程中出错的：</h6></blockquote>
+<hr>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">def func_2(it):</span><br><span class="line">    it[&apos;city&apos;] = &apos;chengdu&apos;</span><br><span class="line"></span><br><span class="line">def func_1():</span><br><span class="line">    a = &#123;&#125;</span><br><span class="line">    a[&apos;name&apos;] = &apos;John&apos;</span><br><span class="line">    func_2(a)</span><br><span class="line">    print a</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func_1()</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<hr>
+<blockquote>
+<p>以上代码是测试Python代码引用问题，最后输出的dict类型应该是包括了city这个key的，这段代码易错的是误把a当成局部变量，而忘记传输参数是引用，可以使用id查看引用的内存地址是一样的。如果要是变量不改变则应该使用copy库中的deepcopy。</p>
 </blockquote>
+<p>++后续更新其他++</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/08/01/AWS Fargate部署/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Python/">Python</a>, <a class="has-link-grey -link" href="/tags/笔记/">笔记</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
 </div>
 
 
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/01/AWS Fargate部署/">
+                <span class="level-item">AWS ECS fargate模式(基于docker hub)部署</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
